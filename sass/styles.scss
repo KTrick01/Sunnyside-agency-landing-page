@@ -86,7 +86,7 @@ a {
             text-transform: uppercase;
             font-weight: 900;
             font-size: 1rem;
-
+           
             &:hover::after {
                 opacity: 1;
             }
@@ -112,6 +112,9 @@ a {
 
         &-text-2 {
             grid-area: txt2;
+            & > .page__grid-btn::after {
+                background-color: $Soft-red;
+            }
         }
 
         &-img-1 {
@@ -273,7 +276,7 @@ a {
     padding: 0 clamp(1rem, 11vw, 10rem);
     @include flex(center, start);
     flex-direction: column;
-    
+    z-index: 0;
     gap: 2rem;
 }
 

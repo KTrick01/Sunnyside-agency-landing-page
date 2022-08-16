@@ -163,6 +163,9 @@ a {
 .page__grid-text-2 {
   grid-area: txt2;
 }
+.page__grid-text-2 > .page__grid-btn::after {
+  background-color: hsl(7deg, 99%, 70%);
+}
 .page__grid-img-1 {
   grid-area: img;
 }
@@ -309,6 +312,7 @@ a {
   align-items: start;
   justify-content: center;
   flex-direction: column;
+  z-index: 0;
   gap: 2rem;
 }
 

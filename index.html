@@ -11,8 +11,12 @@
   <script src="https://kit.fontawesome.com/c27c855421.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Sunnyside agency landing page</title>
   <style>
-    .attribution {transition: .3s; position: fixed; bottom: 0; box-shadow: 0 0 10px rgba(0, 0, 0, 0.274); border-radius: 10px; padding: 5px; background-color: #14253d;  overflow: hidden; margin: 10px auto; font-size: 12px; font-family: sans-serif; text-align: center; letter-spacing: 2px; color: #599fda; left: 50%; transform: translateX(-50%);}
-    
+    .attrbtn {font-size: 1.5rem; transition: .3s;}
+    #att {display: none;}
+    #att:checked ~ .att-container {visibility: visible; max-width: 500px; max-height:50px;}
+    #att:checked ~ .attrbtn {transform: scaleX(-1);}
+    .att-container {transition: .3s; visibility: hidden; max-width: 0; max-height: 0; overflow: hidden;}
+    .attribution { display: flex; align-items: center; transition: .3s; position: fixed; bottom: 0; box-shadow: 0 0 10px rgba(0, 0, 0, 0.274); border-radius: 10px; padding: 5px; background-color: #14253d; margin: 1rem; font-size: 12px; font-family: sans-serif; text-align: center; letter-spacing: 2px; color: #599fda;;}
     .attribution a { position: relative; display: inline-block; transition: .3s; color: #00fff7; text-decoration: none; font-weight: bold; }
     .attribution a::after { transition: .3s; content: " "; width: 0; height: 2px; background-color: rgb(255, 255, 255); position: absolute; inset: 0; top: 17px; left: 50%;}
     .attribution a:hover::after { width: 100%; transform: translateX(-50%);}
@@ -273,8 +277,16 @@
 
   </main>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by  <a href="https://www.frontendmentor.io/profile/KTrick01">Eduardo Fleitas</a>.
+    <input type="checkbox" id="att">
+    
+    <div class="att-container">
+      
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by  <a href="https://www.frontendmentor.io/profile/KTrick01">Eduardo Fleitas</a>.
+      
+    </div>
+    <label class="attrbtn" for="att"><i class="fa-solid fa-angles-right"></i></label>
+    
   </div>
 
 </body>
