@@ -11,6 +11,7 @@ $Very-dark-grayish-blue: hsl(213, 9%, 39%);
 $Dark-grayish-blue: hsl(232, 10%, 55%);
 $Grayish-blue: hsl(210, 4%, 67%);
 $White: hsl(0, 0%, 100%);
+
 $Font1: 'Barlow', sans-serif;
 $Font2: 'Fraunces', serif;
 
@@ -49,10 +50,10 @@ a {
             flex-direction: column;
             gap: 5rem;
 
-            & > h2 {
+            & > h1 {
                 text-align: center;
                 font-family: $Font2;
-                font-size: clamp(1rem, 10vw, 4rem);
+                font-size: clamp(1rem, 10vw, 3rem);
                 color: $White;
                 text-transform: uppercase;
                 letter-spacing: 10px;
@@ -72,7 +73,7 @@ a {
         &-subtitle {
             font-family: $Font2;
             font-weight: 900;
-            font-size: clamp(2rem, 3vw, 2.5rem);
+            font-size: clamp(2rem, 3vw, 2rem);
         }
 
         &-paragraph {
