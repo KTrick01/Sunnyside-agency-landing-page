@@ -11,16 +11,82 @@
   <script src="https://kit.fontawesome.com/c27c855421.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Sunnyside agency landing page</title>
   <style>
-    .attrbtn {font-size: 1.5rem; transition: .3s; cursor: pointer;}
-    .attrbtn:hover {transform: scale(1.1) ;}
-    #att {display: none;}
-    #att:checked ~ .att-container {visibility: visible; max-width: 500px; max-height:50px;}
-    #att:checked ~ .attrbtn {transform: scaleX(-1);}
-    .att-container {transition: .3s; visibility: hidden; max-width: 0; max-height: 0; overflow: hidden;}
-    .attribution { display: flex; align-items: center; transition: .3s; position: fixed; bottom: 0; box-shadow: 0 0 10px rgba(0, 0, 0, 0.274); border-radius: 10px; padding: 5px; background-color: #14253d; margin: 1rem; font-size: 12px; font-family: sans-serif; text-align: center; letter-spacing: 2px; color: #599fda;;}
-    .attribution a { position: relative; display: inline-block; transition: .3s; color: #00fff7; text-decoration: none; font-weight: bold; }
-    .attribution a::after { transition: .3s; content: " "; width: 0; height: 2px; background-color: rgb(255, 255, 255); position: absolute; inset: 0; top: 17px; left: 50%;}
-    .attribution a:hover::after { width: 100%; transform: translateX(-50%);}
+    .attrbtn {
+      font-size: 1.5rem;
+      transition: .3s;
+      cursor: pointer;
+    }
+
+    .attrbtn:hover {
+      transform: scale(1.1);
+    }
+
+    #att {
+      display: none;
+    }
+
+    #att:checked~.att-container {
+      visibility: visible;
+      max-width: 500px;
+      max-height: 50px;
+    }
+
+    #att:checked~.attrbtn {
+      transform: scaleX(-1);
+    }
+
+    .att-container {
+      transition: .3s;
+      visibility: hidden;
+      max-width: 0;
+      max-height: 0;
+      overflow: hidden;
+    }
+
+    .attribution {
+      display: flex;
+      align-items: center;
+      transition: .3s;
+      position: fixed;
+      bottom: 0;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.274);
+      border-radius: 10px;
+      padding: 5px;
+      background-color: #14253d;
+      margin: 1rem;
+      font-size: 12px;
+      font-family: sans-serif;
+      text-align: center;
+      letter-spacing: 2px;
+      color: #599fda;
+      ;
+    }
+
+    .attribution a {
+      position: relative;
+      display: inline-block;
+      transition: .3s;
+      color: #00fff7;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .attribution a::after {
+      transition: .3s;
+      content: " ";
+      width: 0;
+      height: 2px;
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      inset: 0;
+      top: 17px;
+      left: 50%;
+    }
+
+    .attribution a:hover::after {
+      width: 100%;
+      transform: translateX(-50%);
+    }
   </style>
 </head>
 
@@ -28,8 +94,6 @@
   <main class="page">
 
     <header class="page__header">
-      
-      
 
       <nav class="nav">
         <figure>
@@ -65,11 +129,11 @@
 
       <div class="page__grid-text-1 grid-text-area">
 
-        <h3 class="page__grid-subtitle">
+        <h2 class="page__grid-subtitle">
 
           Transform your brand
 
-        </h3>
+        </h2>
         <p class="page__grid-paragraph">
 
           We are a full-service creative agency specializing in helping brands grow fast.
@@ -80,17 +144,15 @@
 
       </div>
 
-      <picture  class="page__grid-img-1">
-        <source srcset="images/mobile/image-transform.jpg" media="(max-width:730px)">
-        <img src="images/desktop/image-transform.jpg" alt="" class="img-grid">
+      <picture class="page__grid-img-1">
+        <source srcset="images/mobile/image-transform.jpg" media="(max-width:730px)" class="images">
+        <img src="images/desktop/image-transform.jpg" alt="" class="img-grid images">
       </picture>
 
-
-      <picture  class="page__grid-img-2">
-        <source srcset="images/mobile/image-stand-out.jpg" media="(max-width:730px)">
-        <img src="images/desktop/image-stand-out.jpg" alt="" class="img-grid">
+      <picture class="page__grid-img-2">
+        <source srcset="images/mobile/image-stand-out.jpg" media="(max-width:730px)" class="images">
+        <img src="images/desktop/image-stand-out.jpg" alt="" class="img-grid images">
       </picture>
-
 
       <div class="page__grid-text-2 grid-text-area">
 
@@ -115,8 +177,8 @@
       <div class="page__grid-text-image page__grid-text-image-area">
 
         <picture class="grid__img-container">
-          <source srcset="images/mobile/image-graphic-design.jpg" media="(max-width:730px)">
-          <img src="images/desktop/image-graphic-design.jpg" alt="" class="grid__img">
+          <source srcset="images/mobile/image-graphic-design.jpg" media="(max-width:730px)" class="images">
+          <img src="images/desktop/image-graphic-design.jpg" alt="" class="grid__img images">
 
         </picture>
 
@@ -138,16 +200,15 @@
 
         </div>
 
-
       </div>
 
       <div class="page__grid-text-image-1 page__grid-text-image-area">
         <picture class="grid__img-container">
-          <source srcset="images/mobile/image-photography.jpg" media="(max-width:730px)">
-          <img src="images/desktop/image-photography.jpg" alt="" class="grid__img">
+          <source srcset="images/mobile/image-photography.jpg" media="(max-width:730px)" class="images">
+          <img src="images/desktop/image-photography.jpg" alt="" class="grid__img images">
         </picture>
 
-        <div class="texts">
+        <div class=" texts">
           <h4 class="page__grid-text-image-area-subtitle">
             Photography
           </h4>
@@ -156,9 +217,9 @@
             Increase your credibility by getting the most stunning, high-quality photos that improve your business
             image.
           </p>
-        </div>
-
       </div>
+
+    </div>
 
     </div>
 
@@ -267,10 +328,10 @@
         </ul>
 
         <div class="footer__social">
-          <a  href="#"><i class="fa-brands fa-square-facebook"></i></a>
-          <a  href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a  href="#"><i class="fa-brands fa-twitter"></i></a>
-          <a  href="#"><i class="fa-brands fa-pinterest"></i></a>
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest"></i></a>
         </div>
 
       </nav>
@@ -279,15 +340,15 @@
   </main>
   <div class="attribution">
     <input type="checkbox" id="att">
-    
+
     <div class="att-container">
-      
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by  <a href="https://www.frontendmentor.io/profile/KTrick01">Eduardo Fleitas</a>.
-      
+
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/KTrick01">Eduardo Fleitas</a>.
+
     </div>
     <label class="attrbtn" for="att"><i class="fa-solid fa-angles-right"></i></label>
-    
+
   </div>
 
 </body>
