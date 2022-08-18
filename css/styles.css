@@ -206,9 +206,12 @@ a {
 }
 .page__testimonials {
   margin-top: 3rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 3rem;
+}
+.page__testimonials > * {
+  flex: 1 1 20rem;
 }
 .page__testimonials-img-container {
   width: 70px;

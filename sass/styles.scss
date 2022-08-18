@@ -170,8 +170,12 @@ a {
 
     &__testimonials {
         margin-top: 3rem;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        display: flex;
+        flex-wrap: wrap;
+        
+        & > * {
+            flex: 1 1 20rem;
+        }
         gap: 3rem;
 
         
